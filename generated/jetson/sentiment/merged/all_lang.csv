@@ -1,0 +1,1 @@
+FeatureFamily,FeatureVariant,Dataset,N_class,Model,AccuracyTrain,WeightedF1Train,AccuracyTest,WeightedF1Test,TrainingTime,NumParams,NumEpochs,data_pts,time_sec,energy_kwh,throughput,time_per_sample,energy_per_sample
