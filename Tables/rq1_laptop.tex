@@ -1,0 +1,74 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{LAPTOP -- MONOLINGUAL -- DEPLOYMENT -- SUMMARY-STATS}
+\label{tab:laptop_rq1}
+\begin{tabular}{lcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Energy (J) - Laptop}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 &  \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 0.230 & 0.31 & 0.52 & 1.12 & 3.41 & 1.00 \\ % min=0.17 max=7.78
+$\mathcal{R}_\text{S}$ & 0.049 & 0.07 & 0.09 & 0.15 & 0.35 & 5.56 \\ % min=0.03 max=0.68
+$\mathcal{R}_\text{H}$ & 0.204 & 0.23 & 0.26 & 0.33 & 0.53 & 1.99 \\ % min=0.15 max=0.79
+$\mathcal{R}_\text{LLM}$ & 0.419 & 0.49 & 0.65 & 1.21 & 1.66 & 0.79 \\ % min=0.40 max=2.24
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 0.105 & 0.29 & 0.52 & 4.05 & 6.96 & 1.00 \\ % min=0.10 max=12.92
+$\mathcal{R}_\text{S}$ & 0.025 & 0.09 & 0.15 & 0.26 & 1.45 & 3.41 \\ % min=0.01 max=3.13
+$\mathcal{R}_\text{H}$ & 0.147 & 0.26 & 0.37 & 0.49 & 1.48 & 1.38 \\ % min=0.14 max=4.51
+$\mathcal{R}_\text{LLM}$ & 0.297 & 0.52 & 1.04 & 1.67 & 5.52 & 0.49 \\ % min=0.27 max=10.30
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{EDP (J$\cdot$ms) - Laptop}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 2.184 & 3.48 & 8.26 & 29.26 & 123.99 & 1.00 \\ % min=1.64 max=608.15
+$\mathcal{R}_\text{S}$ & 0.264 & 0.40 & 0.53 & 0.93 & 2.77 & 15.49 \\ % min=0.14 max=6.96
+$\mathcal{R}_\text{H}$ & 1.890 & 2.17 & 2.55 & 3.53 & 6.24 & 3.24 \\ % min=1.14 max=11.58
+$\mathcal{R}_\text{LLM}$ & 5.483 & 6.37 & 9.81 & 29.54 & 52.18 & 0.84 \\ % min=4.72 max=90.50
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 0.438 & 2.90 & 5.63 & 377.06 & 575.88 & 1.00 \\ % min=0.41 max=2583.41
+$\mathcal{R}_\text{S}$ & 0.046 & 0.46 & 0.82 & 2.20 & 27.14 & 6.87 \\ % min=0.02 max=111.23
+$\mathcal{R}_\text{H}$ & 0.769 & 2.30 & 4.49 & 7.28 & 34.17 & 1.25 \\ % min=0.69 max=280.13
+$\mathcal{R}_\text{LLM}$ & 2.491 & 10.01 & 22.97 & 52.73 & 540.52 & 0.24 \\ % min=2.17 max=1841.07
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Throughput (Req./sec) - Laptop}} & \multirow{2}{*}{\textbf{Gain ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 27.686 & 51.95 & 77.20 & 89.53 & 105.59 & 1.00 \\ % min=12.80 max=106.95
+$\mathcal{R}_\text{S}$ & 126.486 & 156.34 & 172.25 & 182.81 & 194.07 & 2.23 \\ % min=96.67 max=203.19
+$\mathcal{R}_\text{H}$ & 82.727 & 94.74 & 101.34 & 106.57 & 111.95 & 1.31 \\ % min=52.82 max=129.60
+$\mathcal{R}_\text{LLM}$ & 31.830 & 41.06 & 66.51 & 72.51 & 84.21 & 0.86 \\ % min=24.58 max=88.64
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 8.562 & 15.60 & 71.97 & 132.32 & 237.05 & 1.00 \\ % min=5.00 max=241.06
+$\mathcal{R}_\text{S}$ & 57.650 & 114.25 & 151.50 & 207.08 & 531.61 & 2.11 \\ % min=28.14 max=577.22
+$\mathcal{R}_\text{H}$ & 41.569 & 66.57 & 84.07 & 97.98 & 196.26 & 1.17 \\ % min=15.57 max=218.51
+$\mathcal{R}_\text{LLM}$ & 10.223 & 31.74 & 43.66 & 53.38 & 119.18 & 0.61 \\ % min=5.59 max=121.96
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Latency (ms) - Laptop}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+& P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 9.471 & 11.17 & 12.95 & 19.25 & 36.12 & 1.00 \\ % min=9.35 max=78.13
+$\mathcal{R}_\text{S}$ & 5.153 & 5.47 & 5.81 & 6.40 & 7.91 & 2.23 \\ % min=4.92 max=10.34
+$\mathcal{R}_\text{H}$ & 8.933 & 9.38 & 9.87 & 10.56 & 12.09 & 1.31 \\ % min=7.72 max=18.93
+$\mathcal{R}_\text{LLM}$ & 11.875 & 13.79 & 15.04 & 24.35 & 31.42 & 0.86 \\ % min=11.28 max=40.69
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 4.218 & 7.56 & 13.91 & 64.88 & 116.79 & 1.00 \\ % min=4.15 max=199.98
+$\mathcal{R}_\text{S}$ & 1.881 & 4.83 & 6.60 & 8.75 & 17.35 & 2.11 \\ % min=1.73 max=35.54
+$\mathcal{R}_\text{H}$ & 5.095 & 10.21 & 11.90 & 15.02 & 24.06 & 1.17 \\ % min=4.58 max=64.21
+$\mathcal{R}_\text{LLM}$ & 8.391 & 18.73 & 22.90 & 31.51 & 97.82 & 0.61 \\ % min=8.20 max=178.77
+\bottomrule
+\end{tabular}
+\vspace{-2mm} % reduce space after figure
+\end{table}

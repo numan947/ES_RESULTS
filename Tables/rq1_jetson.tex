@@ -1,0 +1,74 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{JETSON -- MONOLINGUAL -- DEPLOYMENT -- SUMMARY-STATS}
+\label{tab:jetson_rq1}
+\begin{tabular}{lcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Energy (J) - Jetson}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 &  \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 0.127 & 0.17 & 0.31 & 0.55 & 0.98 & 1.00 \\ % min=0.12 max=1.22
+$\mathcal{R}_\text{S}$ & 0.009 & 0.02 & 0.02 & 0.03 & 0.06 & 13.09 \\ % min=0.01 max=0.38
+$\mathcal{R}_\text{H}$ & 0.061 & 0.07 & 0.08 & 0.09 & 0.13 & 3.81 \\ % min=0.05 max=0.18
+$\mathcal{R}_\text{LLM}$ & 0.200 & 0.26 & 0.38 & 0.78 & 1.02 & 0.81 \\ % min=0.18 max=1.13
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 0.083 & 0.13 & 0.25 & 1.44 & 4.03 & 1.00 \\ % min=0.08 max=4.70
+$\mathcal{R}_\text{S}$ & 0.009 & 0.03 & 0.04 & 0.07 & 0.25 & 6.06 \\ % min=0.00 max=0.45
+$\mathcal{R}_\text{H}$ & 0.034 & 0.07 & 0.16 & 0.20 & 0.38 & 1.58 \\ % min=0.03 max=0.59
+$\mathcal{R}_\text{LLM}$ & 0.153 & 0.37 & 0.96 & 1.91 & 5.78 & 0.26 \\ % min=0.14 max=11.18
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{EDP (J$\cdot$ms) - Jetson}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 2.187 & 4.13 & 10.63 & 33.37 & 137.28 & 1.00 \\ % min=2.11 max=184.18
+$\mathcal{R}_\text{S}$ & 0.011 & 0.06 & 0.08 & 0.14 & 0.37 & 135.85 \\ % min=0.01 max=16.08
+$\mathcal{R}_\text{H}$ & 0.502 & 0.68 & 0.85 & 1.07 & 1.71 & 12.50 \\ % min=0.37 max=3.47
+$\mathcal{R}_\text{LLM}$ & 3.155 & 6.00 & 14.48 & 42.90 & 71.37 & 0.73 \\ % min=2.53 max=82.54
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 0.969 & 2.37 & 8.67 & 192.45 & 2315.19 & 1.00 \\ % min=0.94 max=2891.43
+$\mathcal{R}_\text{S}$ & 0.010 & 0.10 & 0.23 & 0.67 & 5.18 & 37.95 \\ % min=0.00 max=16.35
+$\mathcal{R}_\text{H}$ & 0.175 & 0.69 & 2.91 & 5.12 & 14.64 & 2.98 \\ % min=0.14 max=31.26
+$\mathcal{R}_\text{LLM}$ & 2.875 & 16.02 & 76.45 & 204.50 & 1725.31 & 0.11 \\ % min=2.61 max=6436.01
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Throughput (Req./sec) - Jetson}} & \multirow{2}{*}{\textbf{Gain ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 7.137 & 16.34 & 29.24 & 42.29 & 57.76 & 1.00 \\ % min=6.65 max=58.83
+$\mathcal{R}_\text{S}$ & 165.928 & 237.43 & 304.49 & 352.77 & 816.81 & 10.42 \\ % min=23.90 max=1255.65
+$\mathcal{R}_\text{H}$ & 73.234 & 86.42 & 96.58 & 106.66 & 121.52 & 3.30 \\ % min=53.11 max=143.42
+$\mathcal{R}_\text{LLM}$ & 14.263 & 18.04 & 24.05 & 47.53 & 63.94 & 0.82 \\ % min=13.67 max=71.18
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 1.739 & 7.26 & 28.60 & 54.52 & 85.71 & 1.00 \\ % min=1.63 max=86.59
+$\mathcal{R}_\text{S}$ & 46.770 & 103.00 & 175.52 & 281.99 & 849.98 & 6.14 \\ % min=27.43 max=2190.29
+$\mathcal{R}_\text{H}$ & 27.185 & 39.94 & 53.88 & 102.60 & 195.26 & 1.88 \\ % min=18.87 max=224.90
+$\mathcal{R}_\text{LLM}$ & 3.344 & 9.34 & 12.87 & 23.08 & 53.02 & 0.45 \\ % min=1.74 max=55.16
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Latency (ms) - Jetson}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+& P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+\multicolumn{7}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 17.313 & 23.65 & 34.21 & 61.20 & 140.11 & 1.00 \\ % min=17.00 max=150.49
+$\mathcal{R}_\text{S}$ & 1.224 & 2.83 & 3.28 & 4.21 & 6.03 & 10.42 \\ % min=0.80 max=41.84
+$\mathcal{R}_\text{H}$ & 8.229 & 9.38 & 10.35 & 11.57 & 13.65 & 3.30 \\ % min=6.97 max=18.83
+$\mathcal{R}_\text{LLM}$ & 15.640 & 21.04 & 41.58 & 55.42 & 70.11 & 0.82 \\ % min=14.05 max=73.17
+\multicolumn{7}{c}{\textbf{Clustering}} \\  % <-- new task row
+$\mathcal{R}_\text{FT}$ & 11.667 & 18.39 & 35.02 & 137.71 & 575.16 & 1.00 \\ % min=11.55 max=614.93
+$\mathcal{R}_\text{S}$ & 1.177 & 3.55 & 5.70 & 9.71 & 21.38 & 6.15 \\ % min=0.46 max=36.46
+$\mathcal{R}_\text{H}$ & 5.122 & 9.75 & 18.56 & 25.04 & 36.78 & 1.89 \\ % min=4.45 max=52.98
+$\mathcal{R}_\text{LLM}$ & 18.859 & 43.32 & 77.70 & 107.02 & 299.02 & 0.45 \\ % min=18.13 max=575.85
+\bottomrule
+\end{tabular}
+\vspace{-2mm} % reduce space after figure
+\end{table}

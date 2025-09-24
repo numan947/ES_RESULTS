@@ -1,0 +1,50 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{JETSON -- MULTILINGUAL -- DEPLOYMENT -- SUMMARY-STATS}
+\label{tab:jetson_rq3}
+\begin{tabular}{lcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Energy (J) - Jetson (Multilingual)}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 &  \\
+\midrule
+$\mathcal{R}_\text{FT}$ & 0.242 & 0.24 & 0.25 & 0.26 & 0.40 & 1.00 \\ % min=0.24 max=0.41
+$\mathcal{R}_\text{S}$ & 0.008 & 0.01 & 0.01 & 0.02 & 0.06 & 16.96 \\ % min=0.01 max=0.07
+$\mathcal{R}_\text{H}$ & 0.063 & 0.07 & 0.08 & 0.09 & 0.13 & 3.25 \\ % min=0.06 max=0.15
+$\mathcal{R}_\text{LLM}$ & 0.238 & 0.26 & 0.36 & 0.75 & 0.89 & 0.68 \\ % min=0.23 max=0.91
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{EDP (J$\cdot$ms) - Jetson (Multilingual)}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+$\mathcal{R}_\text{FT}$ & 8.085 & 8.26 & 8.44 & 9.38 & 16.98 & 1.00 \\ % min=8.02 max=17.64
+$\mathcal{R}_\text{S}$ & 0.010 & 0.02 & 0.03 & 0.08 & 0.27 & 287.25 \\ % min=0.01 max=0.58
+$\mathcal{R}_\text{H}$ & 0.555 & 0.66 & 0.77 & 0.97 & 1.48 & 11.03 \\ % min=0.50 max=2.16
+$\mathcal{R}_\text{LLM}$ & 4.193 & 4.57 & 13.32 & 34.17 & 55.87 & 0.63 \\ % min=4.08 max=59.92
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Throughput (Req./sec) - Jetson (Multilingual)}} & \multirow{2}{*}{\textbf{Gain ($\times$)}} \\
+\cmidrule(lr){2-6}
+ & P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+$\mathcal{R}_\text{FT}$ & 23.510 & 27.64 & 29.27 & 29.61 & 29.91 & 1.00 \\ % min=23.08 max=30.06
+$\mathcal{R}_\text{S}$ & 204.869 & 305.74 & 491.39 & 626.99 & 894.66 & 16.79 \\ % min=127.81 max=1148.97
+$\mathcal{R}_\text{H}$ & 79.836 & 90.36 & 99.87 & 108.85 & 115.53 & 3.41 \\ % min=67.45 max=124.65
+$\mathcal{R}_\text{LLM}$ & 15.971 & 20.94 & 25.10 & 58.31 & 60.37 & 0.86 \\ % min=15.15 max=61.03
+\midrule
+\multirow{2}{*}{\textbf{Method}} 
+& \multicolumn{5}{c}{\textbf{Latency (ms) - Jetson (Multilingual)}} & \multirow{2}{*}{\textbf{Reduction ($\times$)}} \\
+\cmidrule(lr){2-6}
+& P5 & Q1 & Median & Q3 & P95 & \\
+\midrule
+$\mathcal{R}_\text{FT}$ & 33.433 & 33.77 & 34.16 & 36.18 & 42.53 & 1.00 \\ % min=33.27 max=43.32
+$\mathcal{R}_\text{S}$ & 1.118 & 1.59 & 2.04 & 3.27 & 4.88 & 16.79 \\ % min=0.87 max=7.82
+$\mathcal{R}_\text{H}$ & 8.656 & 9.19 & 10.01 & 11.07 & 12.53 & 3.41 \\ % min=8.02 max=14.83
+$\mathcal{R}_\text{LLM}$ & 16.564 & 17.15 & 39.87 & 47.76 & 62.61 & 0.86 \\ % min=16.38 max=66.03
+\bottomrule
+\end{tabular}
+\vspace{-2mm} % reduce space after figure
+\end{table}

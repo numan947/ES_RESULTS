@@ -1,0 +1,34 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Relative latency, energy, and EDP improvements of feature extraction methods on Jetson and Laptop, normalized to FastText ($\mathcal{R}_\text{FT}=1.0\times$). Classification and clustering tasks are shown separately, including multilingual classification.}
+\label{tab:relative_efficiency_devices}
+
+\begin{tabular}{lccc}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Latency \\ Speedup \\ ($\times$)\end{tabular}}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Energy \\ Reduction \\ ($\times$)\end{tabular}}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}EDP \\ Reduction \\ ($\times$)\end{tabular}}} \\
+% \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} & Jetson & Laptop & Jetson & Laptop & Jetson & Laptop \\
+\midrule
+\multicolumn{4}{c}{\textbf{Classification}} \\  % <-- new task row
+$\mathcal{R}_\text{S}$   & 2.23 & 5.56 & 15.49 \\
+$\mathcal{R}_\text{H}$     & 1.31  & 1.99    & 3.24 \\
+$\mathcal{R}_\text{LLM}$   & 0.86  & 0.79     & 0.84  \\
+% $\mathcal{R}_\text{FT}$  & 1.0   & 1.0   & 1.0   & 1.0   & 1.0    & 1.0   \\
+\midrule
+\multicolumn{4}{c}{\textbf{Clustering}} \\  % optional separate section
+$\mathcal{R}_\text{S}$    & 2.11  & 3.41  & 6.87 \\
+$\mathcal{R}_\text{H}$     & 1.17  & 1.38   & 1.25 \\
+$\mathcal{R}_\text{LLM}$  & 0.61   & 0.49    & 0.24  \\
+% $\mathcal{R}_\text{FT}$  & 1.0   & 1.0   & 1.0   & 1.0   & 1.0    & 1.0   \\
+\midrule
+\multicolumn{4}{c}{\textbf{Classification (Multilingual Deployment)}} \\  % optional separate section
+
+$\mathcal{R}_\text{S}$    & 4.90  & 6.49  & 31.82 \\
+$\mathcal{R}_\text{H}$     & 1.44   & 1.43  & 2.05 \\
+$\mathcal{R}_\text{LLM}$   & 0.83   & 0.68   & 0.57  \\
+% $\mathcal{R}_\text{FT}$  & 1.0  & 1.0  & 1.0  & 1.0  & 1.0   & 1.0  \\
+\bottomrule
+\end{tabular}
+
+\vspace{-2mm} % reduce space after figure
+\end{table}
